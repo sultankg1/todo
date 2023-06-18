@@ -1,30 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import App from './components/app';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-// import AppHeader from './components/app-header/app-header';
-// import SearchPanel from './components/search-panel';
-// import TodoList from './components/todo-list';
-
-
-// const App = () => {
-
-//   const todoData = [
-//     { label: 'Drink Coffee', important: false },
-//     { label: 'Make Awseome App', important: true},
-//     { label: 'Have a lunch', important: false}
-//   ];
-
-//  return (
-//   <div>
-//     <AppHeader />
-//     <SearchPanel />
-//     <TodoList todos={todoData}/>
-//   </div>
-//  );
-// };
-
-const root = ReactDOM.createRoot(
-document.getElementById('root'));
-root.render(<App />)
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
